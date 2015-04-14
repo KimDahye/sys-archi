@@ -1,8 +1,8 @@
 /* 
  * CS:APP Data Lab 
  * 
- * 학번: 141010
- * 이름: 김다혜
+ * student num: 141010
+ * name: Dahye Kim
  * 
  * bits.c - Source file with your solutions to the Lab.
  *          This is the file you will hand in to your instructor.
@@ -54,7 +54,7 @@
  *   Rating: 1
  */
 int bitXor(int x, int y) {
-  return (~x&y) | (x&~y);
+  return (~(x&y)) & (~(~x&~y)); //equivalent to (~x&y) | (x&~y); 
 }
 /* 
  * allOddBits - return 1 if all odd-numbered bits in word set to 1
